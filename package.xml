@@ -7,5 +7,11 @@
         <members>ACC_Cycle_de_Validation_A_Verifier</members>
         <name>CustomLabel</name>
     </types>
+    <types>
+        <members>Account-Compte Soufflet RefGroupe</members>
+        <members>Account-Compte de Gestion Vigne - Livré</members>
+        <members>AccountContactRelation-Présentation Relation du contact du compte Vigne</members>
+        <name>Layout</name>
+    </types>
     <version>52.0</version>
 </Package>
