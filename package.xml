@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ACC_ActiviteFarine</members>
+        <members>ACC_Consolide_Record_Type_Id</members>
+        <members>ACC_Cycle_Referentiel_A_Integrer</members>
+        <members>ACC_Cycle_de_Validation_A_Verifier</members>
+        <name>CustomLabel</name>
+    </types>
+    <version>52.0</version>
+</Package>
