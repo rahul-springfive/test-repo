@@ -13,5 +13,11 @@
         <members>AccountContactRelation-Présentation Relation du contact du compte Vigne</members>
         <name>Layout</name>
     </types>
+    <types>
+        <members>Account.ACC_WF09_Si_Statut_Insolvable_Cycle_Referentiel_Devient_AVerifier</members>
+        <members>Account.ACC_WF09tier_Si_Statut_Prospect_Cycle_Referentiel_Devient_AVerifier</members>
+        <members>Account.ACC_WF10_Si_Champ_Modifie_RefGroupe</members>
+        <name>WorkflowRule</name>
+    </types>
     <version>52.0</version>
 </Package>

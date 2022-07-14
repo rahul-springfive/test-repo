@@ -15,13 +15,6 @@
         <value>0120Y000000d1kqQAA</value>
     </labels>
     <labels>
-        <fullName>ACC_Cycle_Referentiel_A_Integrer</fullName>
-        <language>fr</language>
-        <protected>false</protected>
-        <shortDescription>ACC Cycle Referentiel A Integrer</shortDescription>
-        <value>A Intégrer</value>
-    </labels>
-    <labels>
         <fullName>ACC_Cycle_de_Validation_A_Verifier</fullName>
         <language>fr</language>
         <protected>false</protected>
