@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ACC_Cycle_de_Validation_A_Verifier</fullName>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>ACC Cycle de Validation A Verifier</shortDescription>
+        <value>20</value>
+    </labels>
+</CustomLabels>
