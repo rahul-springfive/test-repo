@@ -1,0 +1,2466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Accompagnant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Accompagnant</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Activites</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Action_Corrective_Realisee__c</fullName>
+        <externalId>false</externalId>
+        <label>Action Corrective Réalisée</label>
+        <length>250</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actions_souhaitees__c</fullName>
+        <externalId>false</externalId>
+        <label>Actions souhaitées</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Annulation / Refacturation</fullName>
+                    <default>false</default>
+                    <label>Annulation / Refacturation</label>
+                </value>
+                <value>
+                    <fullName>Organiser une reprise / Relivraison</fullName>
+                    <default>false</default>
+                    <label>Organiser une reprise / Relivraison</label>
+                </value>
+                <value>
+                    <fullName>Faire un Avoir Commercial</fullName>
+                    <default>false</default>
+                    <label>Faire un Avoir Commercial</label>
+                </value>
+                <value>
+                    <fullName>Autre</fullName>
+                    <default>false</default>
+                    <label>Autre</label>
+                </value>
+                <value>
+                    <fullName>Faire un avoir</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Faire un avoir</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Appreciation_du_client__c</fullName>
+        <externalId>false</externalId>
+        <label>Appréciation du client</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pas satisfait</fullName>
+                    <default>false</default>
+                    <label>Pas satisfait</label>
+                </value>
+                <value>
+                    <fullName>Modérément satisfait</fullName>
+                    <default>false</default>
+                    <label>Modérément satisfait</label>
+                </value>
+                <value>
+                    <fullName>Satisfait</fullName>
+                    <default>false</default>
+                    <label>Satisfait</label>
+                </value>
+                <value>
+                    <fullName>Très satisfait</fullName>
+                    <default>false</default>
+                    <label>Très satisfait</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Canal__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(MobileId__c), &apos;Salesforce&apos;, &apos;CT Mobile&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Canal</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Compte_Partenaire__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partenaire</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Compte de gestion Partenaire</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Partenaire d&apos;affaire</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Activités</relationshipLabel>
+        <relationshipName>Activites</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Conclusion_de_l_appel__c</fullName>
+        <externalId>false</externalId>
+        <label>Conclusion de l&apos;appel</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commande Farine</fullName>
+                    <default>false</default>
+                    <label>Commande Farine</label>
+                </value>
+                <value>
+                    <fullName>Commande Surgelés</fullName>
+                    <default>false</default>
+                    <label>Commande Surgelés</label>
+                </value>
+                <value>
+                    <fullName>Commande Farine et Surgelés</fullName>
+                    <default>false</default>
+                    <label>Commande Farine et Surgelés</label>
+                </value>
+                <value>
+                    <fullName>Commande prise par le Commercial</fullName>
+                    <default>false</default>
+                    <label>Commande prise par le Commercial</label>
+                </value>
+                <value>
+                    <fullName>Commande saisie par Moulin</fullName>
+                    <default>false</default>
+                    <label>Commande saisie par Moulin</label>
+                </value>
+                <value>
+                    <fullName>Pas de commande</fullName>
+                    <default>false</default>
+                    <label>Pas de commande</label>
+                </value>
+                <value>
+                    <fullName>Client Absent</fullName>
+                    <default>false</default>
+                    <label>Client Absent</label>
+                </value>
+                <value>
+                    <fullName>Rappel ultérieur</fullName>
+                    <default>false</default>
+                    <label>Rappel ultérieur</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cout_estime__c</fullName>
+        <externalId>false</externalId>
+        <label>Coût estimé</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DB_Activity_Type__c</fullName>
+        <description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field.</description>
+        <externalId>false</externalId>
+        <formula>IF(CONTAINS( Subject , &quot;Email&quot;), &quot;Email&quot;, IF(CONTAINS( Subject , &quot;Cold Call&quot;), &quot;Cold Call&quot;, IF(CONTAINS( Subject , &quot;Call&quot;), &quot;Call&quot;, IF(CONTAINS( Subject , &quot;Meeting&quot;), &quot;Meeting&quot;, IF(CONTAINS( Subject , &quot;On Site Visit&quot;), &quot;Site Visit&quot;, IF(CONTAINS( Subject , &quot;Quote&quot;), &quot;Send Letter/Quote&quot;, &quot;Other&quot;))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DB Activity Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_de_debut_du_prochain_RDV__c</fullName>
+        <externalId>false</externalId>
+        <label>Date de début du prochain RDV</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_de_fin_du_prochain_RDV__c</fullName>
+        <externalId>false</externalId>
+        <label>Date de fin du prochain RDV</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Echeance__c</fullName>
+        <externalId>false</externalId>
+        <label>Echéance</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Emplacement__c</fullName>
+        <externalId>false</externalId>
+        <label>Emplacement</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GC_Commentaire__c</fullName>
+        <externalId>false</externalId>
+        <label>Commentaire</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GC_Indication__c</fullName>
+        <externalId>false</externalId>
+        <label>Indication</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Réussite</fullName>
+                    <default>false</default>
+                    <label>Réussite</label>
+                </value>
+                <value>
+                    <fullName>Déception</fullName>
+                    <default>false</default>
+                    <label>Déception</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GC_Objectif_de_la_prochaine_visite__c</fullName>
+        <externalId>false</externalId>
+        <label>Objectif de la prochaine visite</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>GC_Type_Client__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Partenariat client (stats, contrat, challenge, ….)</fullName>
+                    <default>false</default>
+                    <label>Partenariat client (stats, contrat, challenge, ….)</label>
+                </value>
+                <value>
+                    <fullName>Référencement produit</fullName>
+                    <default>false</default>
+                    <label>Référencement produit / vente nouvelle ligne/ Implantation Blockbuster</label>
+                </value>
+                <value>
+                    <fullName>Accompagnement / formation équipe distributeur</fullName>
+                    <default>false</default>
+                    <label>Accompagnement /Formation équipe distributeur/réunion commerciale</label>
+                </value>
+                <value>
+                    <fullName>Négociation / offre tarifaire</fullName>
+                    <default>false</default>
+                    <label>Négociation / offre tarifaire</label>
+                </value>
+                <value>
+                    <fullName>Gestion litige (qualité, facturation, livraison, etc….)</fullName>
+                    <default>false</default>
+                    <label>Gestion litige (qualité, facturation, livraison, etc….)</label>
+                </value>
+                <value>
+                    <fullName>Présentation nouveautés et opérations</fullName>
+                    <default>false</default>
+                    <label>Présentation nouveautés et opérations</label>
+                </value>
+                <value>
+                    <fullName>Référencement nouvelle ligne (vente)</fullName>
+                    <default>false</default>
+                    <label>Référencement nouvelle ligne (vente)</label>
+                </value>
+                <value>
+                    <fullName>Op trade (vente)</fullName>
+                    <default>false</default>
+                    <label>Op trade (vente)</label>
+                </value>
+                <value>
+                    <fullName>Aide technique (mise en place nouveauté, op trade, démonstration-formation équipes, animation magasin, ….)</fullName>
+                    <default>false</default>
+                    <label>Aide technique (mise en place nouveauté, op trade, démonstration-formation équipes, animation magasin, ….)</label>
+                </value>
+                <value>
+                    <fullName>Commande de suivi (hors nouveautés)</fullName>
+                    <default>false</default>
+                    <label>Commande de suivi (hors nouveautés)</label>
+                </value>
+                <value>
+                    <fullName>Autre : à préciser dans le CR</fullName>
+                    <default>false</default>
+                    <label>Autre : à préciser dans le CR</label>
+                </value>
+                <value>
+                    <fullName>Prospection R1 = Présentation MS/AIT / Découverte client</fullName>
+                    <default>false</default>
+                    <label>Prospection R1 = Présentation MS/AIT / Découverte client</label>
+                </value>
+                <value>
+                    <fullName>Prospection R2 = Confirmation des besoins et proposition de l&apos;offre</fullName>
+                    <default>false</default>
+                    <label>Prospection R2 = Confirmation des besoins et proposition de l&apos;offre</label>
+                </value>
+                <value>
+                    <fullName>Prospection R3 = ouverture de compte / Prise de commande</fullName>
+                    <default>false</default>
+                    <label>Prospection R3 = ouverture de compte / Prise de commande</label>
+                </value>
+                <value>
+                    <fullName>Présentation MS-Ait , découverte client</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Présentation MS-Ait , découverte client</label>
+                </value>
+                <value>
+                    <fullName>Réunion équipe distributeur</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Réunion équipe distributeur</label>
+                </value>
+                <value>
+                    <fullName>Visite de suivi commercial</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Visite de suivi commercial</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Partenariat client (stats, contrat, challenge, ….)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Référencement produit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Accompagnement / formation équipe distributeur</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Négociation / offre tarifaire</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Gestion litige (qualité, facturation, livraison, etc….)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Présentation nouveautés et opérations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Aide technique (mise en place nouveauté, op trade, démonstration-formation équipes, animation magasin, ….)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Autre : à préciser dans le CR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Prospection R1 = Présentation MS/AIT / Découverte client</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Prospection R2 = Confirmation des besoins et proposition de l&apos;offre</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Prospection R3 = ouverture de compte / Prise de commande</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Référencement nouvelle ligne (vente)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Op trade (vente)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Commande de suivi (hors nouveautés)</valueName>
+            </valueSettings>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GC_Objectif_de_la_visite__c</fullName>
+        <externalId>false</externalId>
+        <label>Objectif de la visite</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>GC_Type_Client__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Partenariat client (stats, contrat, challenge, ….)</fullName>
+                    <default>false</default>
+                    <label>Partenariat client (stats, contrat, challenge, ….)</label>
+                </value>
+                <value>
+                    <fullName>Référencement produit</fullName>
+                    <default>false</default>
+                    <label>Référencement produit / vente nouvelle ligne/ Implantation Blockbuster</label>
+                </value>
+                <value>
+                    <fullName>Accompagnement / formation équipe distributeur</fullName>
+                    <default>false</default>
+                    <label>Accompagnement /Formation équipe distributeur/réunion commerciale</label>
+                </value>
+                <value>
+                    <fullName>Négociation / offre tarifaire</fullName>
+                    <default>false</default>
+                    <label>Négociation / offre tarifaire</label>
+                </value>
+                <value>
+                    <fullName>Gestion litige (qualité, facturation, livraison, etc….)</fullName>
+                    <default>false</default>
+                    <label>Gestion litige (qualité, facturation, livraison, etc….)</label>
+                </value>
+                <value>
+                    <fullName>Présentation nouveautés et opérations</fullName>
+                    <default>false</default>
+                    <label>Présentation nouveautés et opérations</label>
+                </value>
+                <value>
+                    <fullName>Référencement nouvelle ligne (vente)</fullName>
+                    <default>false</default>
+                    <label>Référencement nouvelle ligne (vente)</label>
+                </value>
+                <value>
+                    <fullName>Op trade (vente)</fullName>
+                    <default>false</default>
+                    <label>Op trade (vente)</label>
+                </value>
+                <value>
+                    <fullName>Aide technique (mise en place nouveauté, op trade, démonstration-formation équipes, animation magasin, ….)</fullName>
+                    <default>false</default>
+                    <label>Aide technique (mise en place nouveauté, op trade, démonstration-formation équipes, animation magasin, ….)</label>
+                </value>
+                <value>
+                    <fullName>Commande de suivi (hors nouveautés)</fullName>
+                    <default>false</default>
+                    <label>Commande de suivi (hors nouveautés)</label>
+                </value>
+                <value>
+                    <fullName>Autre : à préciser dans le CR</fullName>
+                    <default>false</default>
+                    <label>Autre : à préciser dans le CR</label>
+                </value>
+                <value>
+                    <fullName>Prospection R1 = Présentation MS/AIT / Découverte client</fullName>
+                    <default>false</default>
+                    <label>Prospection R1 = Présentation MS/AIT / Découverte client</label>
+                </value>
+                <value>
+                    <fullName>Prospection R2 = Confirmation des besoins et proposition de l&apos;offre</fullName>
+                    <default>false</default>
+                    <label>Prospection R2 = Confirmation des besoins et proposition de l&apos;offre</label>
+                </value>
+                <value>
+                    <fullName>Prospection R3 = ouverture de compte / Prise de commande</fullName>
+                    <default>false</default>
+                    <label>Prospection R3 = ouverture de compte / Prise de commande</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Partenariat client (stats, contrat, challenge, ….)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Référencement produit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Accompagnement / formation équipe distributeur</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Négociation / offre tarifaire</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Gestion litige (qualité, facturation, livraison, etc….)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Aide technique (mise en place nouveauté, op trade, démonstration-formation équipes, animation magasin, ….)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Autre : à préciser dans le CR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Prospection R1 = Présentation MS/AIT / Découverte client</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Prospection R2 = Confirmation des besoins et proposition de l&apos;offre</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Prospection R3 = ouverture de compte / Prise de commande</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Présentation nouveautés et opérations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Référencement nouvelle ligne (vente)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Op trade (vente)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Commande de suivi (hors nouveautés)</valueName>
+            </valueSettings>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GC_Resultat__c</fullName>
+        <externalId>false</externalId>
+        <label>Résultat</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>GC_Type_Client__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Partenariat client (stats, contrat, challenge, ….)</fullName>
+                    <default>false</default>
+                    <label>Partenariat client (stats, contrat, challenge, ….)</label>
+                </value>
+                <value>
+                    <fullName>Référencement produit</fullName>
+                    <default>false</default>
+                    <label>Référencement produit / vente nouvelle ligne/ Implantation Blockbuster</label>
+                </value>
+                <value>
+                    <fullName>Accompagnement / formation équipe distributeur</fullName>
+                    <default>false</default>
+                    <label>Accompagnement /Formation équipe distributeur/réunion commerciale</label>
+                </value>
+                <value>
+                    <fullName>Négociation / offre tarifaire</fullName>
+                    <default>false</default>
+                    <label>Négociation / offre tarifaire</label>
+                </value>
+                <value>
+                    <fullName>Gestion litige (qualité, facturation, livraison, etc….)</fullName>
+                    <default>false</default>
+                    <label>Gestion litige (qualité, facturation, livraison, etc….)</label>
+                </value>
+                <value>
+                    <fullName>Référencement nouvelle ligne (vente)</fullName>
+                    <default>false</default>
+                    <label>Référencement nouvelle ligne (vente)</label>
+                </value>
+                <value>
+                    <fullName>Op trade (vente)</fullName>
+                    <default>false</default>
+                    <label>Op trade (vente)</label>
+                </value>
+                <value>
+                    <fullName>Aide technique (mise en place nouveauté, op trade, démonstration-formation équipes, animation magasin, ….)</fullName>
+                    <default>false</default>
+                    <label>Aide technique (mise en place nouveauté, op trade, démonstration-formation équipes, animation magasin, ….)</label>
+                </value>
+                <value>
+                    <fullName>Commande de suivi (hors nouveautés)</fullName>
+                    <default>false</default>
+                    <label>Commande de suivi (hors nouveautés)</label>
+                </value>
+                <value>
+                    <fullName>Autre : à préciser dans le CR</fullName>
+                    <default>false</default>
+                    <label>Autre : à préciser dans le CR</label>
+                </value>
+                <value>
+                    <fullName>Présentation nouveautés et opérations</fullName>
+                    <default>false</default>
+                    <label>Présentation nouveautés et opérations</label>
+                </value>
+                <value>
+                    <fullName>Prospection R1 = Présentation MS/AIT / Découverte client</fullName>
+                    <default>false</default>
+                    <label>Prospection R1 = Présentation MS/AIT / Découverte client</label>
+                </value>
+                <value>
+                    <fullName>Prospection R2 = Confirmation des besoins et proposition de l&apos;offre</fullName>
+                    <default>false</default>
+                    <label>Prospection R2 = Confirmation des besoins et proposition de l&apos;offre</label>
+                </value>
+                <value>
+                    <fullName>Prospection R3 = ouverture de compte / Prise de commande</fullName>
+                    <default>false</default>
+                    <label>Prospection R3 = ouverture de compte / Prise de commande</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Partenariat client (stats, contrat, challenge, ….)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Référencement produit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Accompagnement / formation équipe distributeur</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Négociation / offre tarifaire</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <valueName>Gestion litige (qualité, facturation, livraison, etc….)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Aide technique (mise en place nouveauté, op trade, démonstration-formation équipes, animation magasin, ….)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Autre : à préciser dans le CR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Prospection R1 = Présentation MS/AIT / Découverte client</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Prospection R2 = Confirmation des besoins et proposition de l&apos;offre</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct</controllingFieldValue>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Prospection R3 = ouverture de compte / Prise de commande</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Référencement nouvelle ligne (vente)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Op trade (vente)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Commande de suivi (hors nouveautés)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Indirect</controllingFieldValue>
+                <valueName>Présentation nouveautés et opérations</valueName>
+            </valueSettings>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GC_Type_Client__c</fullName>
+        <externalId>false</externalId>
+        <label>Type Client</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Direct</fullName>
+                    <default>false</default>
+                    <label>Direct</label>
+                </value>
+                <value>
+                    <fullName>Indirect</fullName>
+                    <default>false</default>
+                    <label>Indirect</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GC_Type_d_evenement__c</fullName>
+        <externalId>false</externalId>
+        <label>Type d&apos;évenement</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aucun</fullName>
+                    <default>false</default>
+                    <label>Aucun</label>
+                </value>
+                <value>
+                    <fullName>Visite</fullName>
+                    <default>false</default>
+                    <label>Visite</label>
+                </value>
+                <value>
+                    <fullName>Appel</fullName>
+                    <default>false</default>
+                    <label>Appel</label>
+                </value>
+                <value>
+                    <fullName>Administratif</fullName>
+                    <default>false</default>
+                    <label>Administratif</label>
+                </value>
+                <value>
+                    <fullName>Formation interne</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Formation interne</label>
+                </value>
+                <value>
+                    <fullName>Réunion</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Réunion</label>
+                </value>
+                <value>
+                    <fullName>Réunion interne</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Réunion interne</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Heure_d_appel__c</fullName>
+        <externalId>false</externalId>
+        <label>Heure d&apos;appel</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Autre</fullName>
+                    <default>false</default>
+                    <label>Autre</label>
+                </value>
+                <value>
+                    <fullName>6:00</fullName>
+                    <default>false</default>
+                    <label>6:00</label>
+                </value>
+                <value>
+                    <fullName>6:05</fullName>
+                    <default>false</default>
+                    <label>6:05</label>
+                </value>
+                <value>
+                    <fullName>6:10</fullName>
+                    <default>false</default>
+                    <label>6:10</label>
+                </value>
+                <value>
+                    <fullName>6:15</fullName>
+                    <default>false</default>
+                    <label>6:15</label>
+                </value>
+                <value>
+                    <fullName>6:20</fullName>
+                    <default>false</default>
+                    <label>6:20</label>
+                </value>
+                <value>
+                    <fullName>6:25</fullName>
+                    <default>false</default>
+                    <label>6:25</label>
+                </value>
+                <value>
+                    <fullName>6:30</fullName>
+                    <default>false</default>
+                    <label>6:30</label>
+                </value>
+                <value>
+                    <fullName>6:35</fullName>
+                    <default>false</default>
+                    <label>6:35</label>
+                </value>
+                <value>
+                    <fullName>6:40</fullName>
+                    <default>false</default>
+                    <label>6:40</label>
+                </value>
+                <value>
+                    <fullName>6:45</fullName>
+                    <default>false</default>
+                    <label>6:45</label>
+                </value>
+                <value>
+                    <fullName>6:50</fullName>
+                    <default>false</default>
+                    <label>6:50</label>
+                </value>
+                <value>
+                    <fullName>6:55</fullName>
+                    <default>false</default>
+                    <label>6:55</label>
+                </value>
+                <value>
+                    <fullName>7:00</fullName>
+                    <default>false</default>
+                    <label>7:00</label>
+                </value>
+                <value>
+                    <fullName>7:05</fullName>
+                    <default>false</default>
+                    <label>7:05</label>
+                </value>
+                <value>
+                    <fullName>7:10</fullName>
+                    <default>false</default>
+                    <label>7:10</label>
+                </value>
+                <value>
+                    <fullName>7:15</fullName>
+                    <default>false</default>
+                    <label>7:15</label>
+                </value>
+                <value>
+                    <fullName>7:20</fullName>
+                    <default>false</default>
+                    <label>7:20</label>
+                </value>
+                <value>
+                    <fullName>7:25</fullName>
+                    <default>false</default>
+                    <label>7:25</label>
+                </value>
+                <value>
+                    <fullName>7:30</fullName>
+                    <default>false</default>
+                    <label>7:30</label>
+                </value>
+                <value>
+                    <fullName>7:35</fullName>
+                    <default>false</default>
+                    <label>7:35</label>
+                </value>
+                <value>
+                    <fullName>7:40</fullName>
+                    <default>false</default>
+                    <label>7:40</label>
+                </value>
+                <value>
+                    <fullName>7:45</fullName>
+                    <default>false</default>
+                    <label>7:45</label>
+                </value>
+                <value>
+                    <fullName>7:50</fullName>
+                    <default>false</default>
+                    <label>7:50</label>
+                </value>
+                <value>
+                    <fullName>7:55</fullName>
+                    <default>false</default>
+                    <label>7:55</label>
+                </value>
+                <value>
+                    <fullName>8:00</fullName>
+                    <default>false</default>
+                    <label>8:00</label>
+                </value>
+                <value>
+                    <fullName>8:05</fullName>
+                    <default>false</default>
+                    <label>8:05</label>
+                </value>
+                <value>
+                    <fullName>8:10</fullName>
+                    <default>false</default>
+                    <label>8:10</label>
+                </value>
+                <value>
+                    <fullName>8:15</fullName>
+                    <default>false</default>
+                    <label>8:15</label>
+                </value>
+                <value>
+                    <fullName>8:20</fullName>
+                    <default>false</default>
+                    <label>8:20</label>
+                </value>
+                <value>
+                    <fullName>8:25</fullName>
+                    <default>false</default>
+                    <label>8:25</label>
+                </value>
+                <value>
+                    <fullName>8:30</fullName>
+                    <default>false</default>
+                    <label>8:30</label>
+                </value>
+                <value>
+                    <fullName>8:35</fullName>
+                    <default>false</default>
+                    <label>8:35</label>
+                </value>
+                <value>
+                    <fullName>8:40</fullName>
+                    <default>false</default>
+                    <label>8:40</label>
+                </value>
+                <value>
+                    <fullName>8:45</fullName>
+                    <default>false</default>
+                    <label>8:45</label>
+                </value>
+                <value>
+                    <fullName>8:50</fullName>
+                    <default>false</default>
+                    <label>8:50</label>
+                </value>
+                <value>
+                    <fullName>8:55</fullName>
+                    <default>false</default>
+                    <label>8:55</label>
+                </value>
+                <value>
+                    <fullName>9:00</fullName>
+                    <default>false</default>
+                    <label>9:00</label>
+                </value>
+                <value>
+                    <fullName>9:05</fullName>
+                    <default>false</default>
+                    <label>9:05</label>
+                </value>
+                <value>
+                    <fullName>9:10</fullName>
+                    <default>false</default>
+                    <label>9:10</label>
+                </value>
+                <value>
+                    <fullName>9:15</fullName>
+                    <default>false</default>
+                    <label>9:15</label>
+                </value>
+                <value>
+                    <fullName>9:20</fullName>
+                    <default>false</default>
+                    <label>9:20</label>
+                </value>
+                <value>
+                    <fullName>9:25</fullName>
+                    <default>false</default>
+                    <label>9:25</label>
+                </value>
+                <value>
+                    <fullName>9:30</fullName>
+                    <default>false</default>
+                    <label>9:30</label>
+                </value>
+                <value>
+                    <fullName>9:35</fullName>
+                    <default>false</default>
+                    <label>9:35</label>
+                </value>
+                <value>
+                    <fullName>9:40</fullName>
+                    <default>false</default>
+                    <label>9:40</label>
+                </value>
+                <value>
+                    <fullName>9:45</fullName>
+                    <default>false</default>
+                    <label>9:45</label>
+                </value>
+                <value>
+                    <fullName>9:50</fullName>
+                    <default>false</default>
+                    <label>9:50</label>
+                </value>
+                <value>
+                    <fullName>9:55</fullName>
+                    <default>false</default>
+                    <label>9:55</label>
+                </value>
+                <value>
+                    <fullName>10:00</fullName>
+                    <default>false</default>
+                    <label>10:00</label>
+                </value>
+                <value>
+                    <fullName>10:05</fullName>
+                    <default>false</default>
+                    <label>10:05</label>
+                </value>
+                <value>
+                    <fullName>10:10</fullName>
+                    <default>false</default>
+                    <label>10:10</label>
+                </value>
+                <value>
+                    <fullName>10:15</fullName>
+                    <default>false</default>
+                    <label>10:15</label>
+                </value>
+                <value>
+                    <fullName>10:20</fullName>
+                    <default>false</default>
+                    <label>10:20</label>
+                </value>
+                <value>
+                    <fullName>10:25</fullName>
+                    <default>false</default>
+                    <label>10:25</label>
+                </value>
+                <value>
+                    <fullName>10:30</fullName>
+                    <default>false</default>
+                    <label>10:30</label>
+                </value>
+                <value>
+                    <fullName>10:35</fullName>
+                    <default>false</default>
+                    <label>10:35</label>
+                </value>
+                <value>
+                    <fullName>10:40</fullName>
+                    <default>false</default>
+                    <label>10:40</label>
+                </value>
+                <value>
+                    <fullName>10:45</fullName>
+                    <default>false</default>
+                    <label>10:45</label>
+                </value>
+                <value>
+                    <fullName>10:50</fullName>
+                    <default>false</default>
+                    <label>10:50</label>
+                </value>
+                <value>
+                    <fullName>10:55</fullName>
+                    <default>false</default>
+                    <label>10:55</label>
+                </value>
+                <value>
+                    <fullName>11:00</fullName>
+                    <default>false</default>
+                    <label>11:00</label>
+                </value>
+                <value>
+                    <fullName>11:05</fullName>
+                    <default>false</default>
+                    <label>11:05</label>
+                </value>
+                <value>
+                    <fullName>11:10</fullName>
+                    <default>false</default>
+                    <label>11:10</label>
+                </value>
+                <value>
+                    <fullName>11:15</fullName>
+                    <default>false</default>
+                    <label>11:15</label>
+                </value>
+                <value>
+                    <fullName>11:20</fullName>
+                    <default>false</default>
+                    <label>11:20</label>
+                </value>
+                <value>
+                    <fullName>11:25</fullName>
+                    <default>false</default>
+                    <label>11:25</label>
+                </value>
+                <value>
+                    <fullName>11:30</fullName>
+                    <default>false</default>
+                    <label>11:30</label>
+                </value>
+                <value>
+                    <fullName>11:35</fullName>
+                    <default>false</default>
+                    <label>11:35</label>
+                </value>
+                <value>
+                    <fullName>11:40</fullName>
+                    <default>false</default>
+                    <label>11:40</label>
+                </value>
+                <value>
+                    <fullName>11:45</fullName>
+                    <default>false</default>
+                    <label>11:45</label>
+                </value>
+                <value>
+                    <fullName>11:50</fullName>
+                    <default>false</default>
+                    <label>11:50</label>
+                </value>
+                <value>
+                    <fullName>11:55</fullName>
+                    <default>false</default>
+                    <label>11:55</label>
+                </value>
+                <value>
+                    <fullName>12:00</fullName>
+                    <default>false</default>
+                    <label>12:00</label>
+                </value>
+                <value>
+                    <fullName>12:05</fullName>
+                    <default>false</default>
+                    <label>12:05</label>
+                </value>
+                <value>
+                    <fullName>12:10</fullName>
+                    <default>false</default>
+                    <label>12:10</label>
+                </value>
+                <value>
+                    <fullName>12:15</fullName>
+                    <default>false</default>
+                    <label>12:15</label>
+                </value>
+                <value>
+                    <fullName>12:20</fullName>
+                    <default>false</default>
+                    <label>12:20</label>
+                </value>
+                <value>
+                    <fullName>12:25</fullName>
+                    <default>false</default>
+                    <label>12:25</label>
+                </value>
+                <value>
+                    <fullName>12:30</fullName>
+                    <default>false</default>
+                    <label>12:30</label>
+                </value>
+                <value>
+                    <fullName>12:35</fullName>
+                    <default>false</default>
+                    <label>12:35</label>
+                </value>
+                <value>
+                    <fullName>12:40</fullName>
+                    <default>false</default>
+                    <label>12:40</label>
+                </value>
+                <value>
+                    <fullName>12:45</fullName>
+                    <default>false</default>
+                    <label>12:45</label>
+                </value>
+                <value>
+                    <fullName>12:50</fullName>
+                    <default>false</default>
+                    <label>12:50</label>
+                </value>
+                <value>
+                    <fullName>12:55</fullName>
+                    <default>false</default>
+                    <label>12:55</label>
+                </value>
+                <value>
+                    <fullName>13:00</fullName>
+                    <default>false</default>
+                    <label>13:00</label>
+                </value>
+                <value>
+                    <fullName>13:05</fullName>
+                    <default>false</default>
+                    <label>13:05</label>
+                </value>
+                <value>
+                    <fullName>13:10</fullName>
+                    <default>false</default>
+                    <label>13:10</label>
+                </value>
+                <value>
+                    <fullName>13:15</fullName>
+                    <default>false</default>
+                    <label>13:15</label>
+                </value>
+                <value>
+                    <fullName>13:20</fullName>
+                    <default>false</default>
+                    <label>13:20</label>
+                </value>
+                <value>
+                    <fullName>13:25</fullName>
+                    <default>false</default>
+                    <label>13:25</label>
+                </value>
+                <value>
+                    <fullName>13:30</fullName>
+                    <default>false</default>
+                    <label>13:30</label>
+                </value>
+                <value>
+                    <fullName>13:35</fullName>
+                    <default>false</default>
+                    <label>13:35</label>
+                </value>
+                <value>
+                    <fullName>13:40</fullName>
+                    <default>false</default>
+                    <label>13:40</label>
+                </value>
+                <value>
+                    <fullName>13:45</fullName>
+                    <default>false</default>
+                    <label>13:45</label>
+                </value>
+                <value>
+                    <fullName>13:50</fullName>
+                    <default>false</default>
+                    <label>13:50</label>
+                </value>
+                <value>
+                    <fullName>13:55</fullName>
+                    <default>false</default>
+                    <label>13:55</label>
+                </value>
+                <value>
+                    <fullName>14:00</fullName>
+                    <default>false</default>
+                    <label>14:00</label>
+                </value>
+                <value>
+                    <fullName>14:05</fullName>
+                    <default>false</default>
+                    <label>14:05</label>
+                </value>
+                <value>
+                    <fullName>14:10</fullName>
+                    <default>false</default>
+                    <label>14:10</label>
+                </value>
+                <value>
+                    <fullName>14:15</fullName>
+                    <default>false</default>
+                    <label>14:15</label>
+                </value>
+                <value>
+                    <fullName>14:20</fullName>
+                    <default>false</default>
+                    <label>14:20</label>
+                </value>
+                <value>
+                    <fullName>14:25</fullName>
+                    <default>false</default>
+                    <label>14:25</label>
+                </value>
+                <value>
+                    <fullName>14:30</fullName>
+                    <default>false</default>
+                    <label>14:30</label>
+                </value>
+                <value>
+                    <fullName>14:35</fullName>
+                    <default>false</default>
+                    <label>14:35</label>
+                </value>
+                <value>
+                    <fullName>14:40</fullName>
+                    <default>false</default>
+                    <label>14:40</label>
+                </value>
+                <value>
+                    <fullName>14:45</fullName>
+                    <default>false</default>
+                    <label>14:45</label>
+                </value>
+                <value>
+                    <fullName>14:50</fullName>
+                    <default>false</default>
+                    <label>14:50</label>
+                </value>
+                <value>
+                    <fullName>14:55</fullName>
+                    <default>false</default>
+                    <label>14:55</label>
+                </value>
+                <value>
+                    <fullName>15:00</fullName>
+                    <default>false</default>
+                    <label>15:00</label>
+                </value>
+                <value>
+                    <fullName>15:05</fullName>
+                    <default>false</default>
+                    <label>15:05</label>
+                </value>
+                <value>
+                    <fullName>15:10</fullName>
+                    <default>false</default>
+                    <label>15:10</label>
+                </value>
+                <value>
+                    <fullName>15:15</fullName>
+                    <default>false</default>
+                    <label>15:15</label>
+                </value>
+                <value>
+                    <fullName>15:20</fullName>
+                    <default>false</default>
+                    <label>15:20</label>
+                </value>
+                <value>
+                    <fullName>15:25</fullName>
+                    <default>false</default>
+                    <label>15:25</label>
+                </value>
+                <value>
+                    <fullName>15:30</fullName>
+                    <default>false</default>
+                    <label>15:30</label>
+                </value>
+                <value>
+                    <fullName>15:35</fullName>
+                    <default>false</default>
+                    <label>15:35</label>
+                </value>
+                <value>
+                    <fullName>15:40</fullName>
+                    <default>false</default>
+                    <label>15:40</label>
+                </value>
+                <value>
+                    <fullName>15:45</fullName>
+                    <default>false</default>
+                    <label>15:45</label>
+                </value>
+                <value>
+                    <fullName>15:50</fullName>
+                    <default>false</default>
+                    <label>15:50</label>
+                </value>
+                <value>
+                    <fullName>15:55</fullName>
+                    <default>false</default>
+                    <label>15:55</label>
+                </value>
+                <value>
+                    <fullName>16:00</fullName>
+                    <default>false</default>
+                    <label>16:00</label>
+                </value>
+                <value>
+                    <fullName>16:05</fullName>
+                    <default>false</default>
+                    <label>16:05</label>
+                </value>
+                <value>
+                    <fullName>16:10</fullName>
+                    <default>false</default>
+                    <label>16:10</label>
+                </value>
+                <value>
+                    <fullName>16:15</fullName>
+                    <default>false</default>
+                    <label>16:15</label>
+                </value>
+                <value>
+                    <fullName>16:20</fullName>
+                    <default>false</default>
+                    <label>16:20</label>
+                </value>
+                <value>
+                    <fullName>16:25</fullName>
+                    <default>false</default>
+                    <label>16:25</label>
+                </value>
+                <value>
+                    <fullName>16:30</fullName>
+                    <default>false</default>
+                    <label>16:30</label>
+                </value>
+                <value>
+                    <fullName>16:35</fullName>
+                    <default>false</default>
+                    <label>16:35</label>
+                </value>
+                <value>
+                    <fullName>16:40</fullName>
+                    <default>false</default>
+                    <label>16:40</label>
+                </value>
+                <value>
+                    <fullName>16:45</fullName>
+                    <default>false</default>
+                    <label>16:45</label>
+                </value>
+                <value>
+                    <fullName>16:50</fullName>
+                    <default>false</default>
+                    <label>16:50</label>
+                </value>
+                <value>
+                    <fullName>16:55</fullName>
+                    <default>false</default>
+                    <label>16:55</label>
+                </value>
+                <value>
+                    <fullName>17:00</fullName>
+                    <default>false</default>
+                    <label>17:00</label>
+                </value>
+                <value>
+                    <fullName>17:05</fullName>
+                    <default>false</default>
+                    <label>17:05</label>
+                </value>
+                <value>
+                    <fullName>17:10</fullName>
+                    <default>false</default>
+                    <label>17:10</label>
+                </value>
+                <value>
+                    <fullName>17:15</fullName>
+                    <default>false</default>
+                    <label>17:15</label>
+                </value>
+                <value>
+                    <fullName>17:20</fullName>
+                    <default>false</default>
+                    <label>17:20</label>
+                </value>
+                <value>
+                    <fullName>17:25</fullName>
+                    <default>false</default>
+                    <label>17:25</label>
+                </value>
+                <value>
+                    <fullName>17:30</fullName>
+                    <default>false</default>
+                    <label>17:30</label>
+                </value>
+                <value>
+                    <fullName>17:35</fullName>
+                    <default>false</default>
+                    <label>17:35</label>
+                </value>
+                <value>
+                    <fullName>17:40</fullName>
+                    <default>false</default>
+                    <label>17:40</label>
+                </value>
+                <value>
+                    <fullName>17:45</fullName>
+                    <default>false</default>
+                    <label>17:45</label>
+                </value>
+                <value>
+                    <fullName>17:50</fullName>
+                    <default>false</default>
+                    <label>17:50</label>
+                </value>
+                <value>
+                    <fullName>17:55</fullName>
+                    <default>false</default>
+                    <label>17:55</label>
+                </value>
+                <value>
+                    <fullName>18:00</fullName>
+                    <default>false</default>
+                    <label>18:00</label>
+                </value>
+                <value>
+                    <fullName>18:05</fullName>
+                    <default>false</default>
+                    <label>18:05</label>
+                </value>
+                <value>
+                    <fullName>18:10</fullName>
+                    <default>false</default>
+                    <label>18:10</label>
+                </value>
+                <value>
+                    <fullName>18:15</fullName>
+                    <default>false</default>
+                    <label>18:15</label>
+                </value>
+                <value>
+                    <fullName>18:20</fullName>
+                    <default>false</default>
+                    <label>18:20</label>
+                </value>
+                <value>
+                    <fullName>18:25</fullName>
+                    <default>false</default>
+                    <label>18:25</label>
+                </value>
+                <value>
+                    <fullName>18:30</fullName>
+                    <default>false</default>
+                    <label>18:30</label>
+                </value>
+                <value>
+                    <fullName>18:35</fullName>
+                    <default>false</default>
+                    <label>18:35</label>
+                </value>
+                <value>
+                    <fullName>18:40</fullName>
+                    <default>false</default>
+                    <label>18:40</label>
+                </value>
+                <value>
+                    <fullName>18:45</fullName>
+                    <default>false</default>
+                    <label>18:45</label>
+                </value>
+                <value>
+                    <fullName>18:50</fullName>
+                    <default>false</default>
+                    <label>18:50</label>
+                </value>
+                <value>
+                    <fullName>18:55</fullName>
+                    <default>false</default>
+                    <label>18:55</label>
+                </value>
+                <value>
+                    <fullName>19:00</fullName>
+                    <default>false</default>
+                    <label>19:00</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsOwner__c</fullName>
+        <externalId>false</externalId>
+        <formula>$User.Id =  OwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsOwner</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MobileId__c</fullName>
+        <externalId>false</externalId>
+        <label>MobileId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Objectif_de_la_prochaine_visite__c</fullName>
+        <externalId>false</externalId>
+        <label>Objectif de la prochaine visite</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commandes</fullName>
+                    <default>false</default>
+                    <label>Commandes</label>
+                </value>
+                <value>
+                    <fullName>Encaissement</fullName>
+                    <default>false</default>
+                    <label>Encaissement</label>
+                </value>
+                <value>
+                    <fullName>Dépannage</fullName>
+                    <default>false</default>
+                    <label>Dépannage</label>
+                </value>
+                <value>
+                    <fullName>Mutation</fullName>
+                    <default>false</default>
+                    <label>Mutation</label>
+                </value>
+                <value>
+                    <fullName>Développement Gamme</fullName>
+                    <default>false</default>
+                    <label>Développement Gamme</label>
+                </value>
+                <value>
+                    <fullName>Opérations Commerciales</fullName>
+                    <default>false</default>
+                    <label>Opérations Commerciales</label>
+                </value>
+                <value>
+                    <fullName>Point chiffre</fullName>
+                    <default>false</default>
+                    <label>Point chiffre</label>
+                </value>
+                <value>
+                    <fullName>Réclamations</fullName>
+                    <default>false</default>
+                    <label>Réclamations</label>
+                </value>
+                <value>
+                    <fullName>Déstockage</fullName>
+                    <default>false</default>
+                    <label>Déstockage</label>
+                </value>
+                <value>
+                    <fullName>Découverte Prospect</fullName>
+                    <default>false</default>
+                    <label>Découverte Prospect</label>
+                </value>
+                <value>
+                    <fullName>Nouveau Mode de Paiement</fullName>
+                    <default>false</default>
+                    <label>Nouveau Mode de Paiement</label>
+                </value>
+                <value>
+                    <fullName>Bio</fullName>
+                    <default>false</default>
+                    <label>Bio</label>
+                </value>
+                <value>
+                    <fullName>BFR</fullName>
+                    <default>false</default>
+                    <label>BFR</label>
+                </value>
+                <value>
+                    <fullName>FDNR</fullName>
+                    <default>false</default>
+                    <label>FDNR</label>
+                </value>
+                <value>
+                    <fullName>Mixe</fullName>
+                    <default>false</default>
+                    <label>Mixe</label>
+                </value>
+                <value>
+                    <fullName>MaB Offre FREE</fullName>
+                    <default>false</default>
+                    <label>MaB Offre FREE</label>
+                </value>
+                <value>
+                    <fullName>Collection gourmande</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Collection gourmande</label>
+                </value>
+                <value>
+                    <fullName>Contrat Partenaire</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Contrat Partenaire</label>
+                </value>
+                <value>
+                    <fullName>Prestations associées</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Prestations associées</label>
+                </value>
+                <value>
+                    <fullName>Relationnel</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Relationnel</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Objectif_de_la_visite__c</fullName>
+        <externalId>false</externalId>
+        <label>Objectif de la visite</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commandes</fullName>
+                    <default>false</default>
+                    <label>Commandes</label>
+                </value>
+                <value>
+                    <fullName>Encaissement</fullName>
+                    <default>false</default>
+                    <label>Encaissement</label>
+                </value>
+                <value>
+                    <fullName>Dépannage</fullName>
+                    <default>false</default>
+                    <label>Dépannage</label>
+                </value>
+                <value>
+                    <fullName>Mutation</fullName>
+                    <default>false</default>
+                    <label>Mutation</label>
+                </value>
+                <value>
+                    <fullName>Développement Gamme</fullName>
+                    <default>false</default>
+                    <label>Développement Gamme</label>
+                </value>
+                <value>
+                    <fullName>Opérations Commerciales</fullName>
+                    <default>false</default>
+                    <label>Opérations Commerciales</label>
+                </value>
+                <value>
+                    <fullName>Point chiffre</fullName>
+                    <default>false</default>
+                    <label>Point chiffre</label>
+                </value>
+                <value>
+                    <fullName>Réclamations</fullName>
+                    <default>false</default>
+                    <label>Réclamations</label>
+                </value>
+                <value>
+                    <fullName>Déstockage</fullName>
+                    <default>false</default>
+                    <label>Déstockage</label>
+                </value>
+                <value>
+                    <fullName>Découverte Prospect</fullName>
+                    <default>false</default>
+                    <label>Découverte Prospect</label>
+                </value>
+                <value>
+                    <fullName>Nouveau Mode de Paiement</fullName>
+                    <default>false</default>
+                    <label>Nouveau Mode de Paiement</label>
+                </value>
+                <value>
+                    <fullName>Tarif</fullName>
+                    <default>false</default>
+                    <label>Tarif</label>
+                </value>
+                <value>
+                    <fullName>Bio</fullName>
+                    <default>false</default>
+                    <label>Bio</label>
+                </value>
+                <value>
+                    <fullName>BFR</fullName>
+                    <default>false</default>
+                    <label>BFR</label>
+                </value>
+                <value>
+                    <fullName>FDNR</fullName>
+                    <default>false</default>
+                    <label>FDNR</label>
+                </value>
+                <value>
+                    <fullName>Mixe</fullName>
+                    <default>false</default>
+                    <label>Mixe</label>
+                </value>
+                <value>
+                    <fullName>maboulangerie.com</fullName>
+                    <default>false</default>
+                    <label>maboulangerie.com</label>
+                </value>
+                <value>
+                    <fullName>MaB Offre FREE</fullName>
+                    <default>false</default>
+                    <label>MaB Offre FREE</label>
+                </value>
+                <value>
+                    <fullName>Collection gourmande</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Collection gourmande</label>
+                </value>
+                <value>
+                    <fullName>Contrat Partenaire</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Contrat Partenaire</label>
+                </value>
+                <value>
+                    <fullName>Développement</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Développement</label>
+                </value>
+                <value>
+                    <fullName>Prestations associées</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Prestations associées</label>
+                </value>
+                <value>
+                    <fullName>Relationnel</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Relationnel</label>
+                </value>
+                <value>
+                    <fullName>Salon Europain</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Salon Europain</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Op_ration_20_Duo_accept_e__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Incentive Televente</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Op_ration_20_Duo_pr_sent_e__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Opération 20% Duo présentée (plus utile)</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Commande</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Order.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.WhatId</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Order.RecordType.DeveloperName</field>
+                <operation>contains</operation>
+                <value>Vitivalor</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Order</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Planifier_un_prochain_RDV__c</fullName>
+        <externalId>false</externalId>
+        <label>Planifier un prochain RDV</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Oui</fullName>
+                    <default>false</default>
+                    <label>Oui</label>
+                </value>
+                <value>
+                    <fullName>Non</fullName>
+                    <default>false</default>
+                    <label>Non</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Prestation_associees__c</fullName>
+        <externalId>false</externalId>
+        <label>Prestation associées</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Kit animation</fullName>
+                    <default>false</default>
+                    <label>Kit animation</label>
+                </value>
+                <value>
+                    <fullName>Mailing</fullName>
+                    <default>false</default>
+                    <label>Mailing</label>
+                </value>
+                <value>
+                    <fullName>Merchandising</fullName>
+                    <default>false</default>
+                    <label>Merchandising</label>
+                </value>
+                <value>
+                    <fullName>Produits catalogue</fullName>
+                    <default>false</default>
+                    <label>Produits catalogue</label>
+                </value>
+                <value>
+                    <fullName>Concept</fullName>
+                    <default>false</default>
+                    <label>Concept</label>
+                </value>
+                <value>
+                    <fullName>Conseil gestion</fullName>
+                    <default>false</default>
+                    <label>Conseil gestion</label>
+                </value>
+                <value>
+                    <fullName>Mutation</fullName>
+                    <default>false</default>
+                    <label>Mutation</label>
+                </value>
+                <value>
+                    <fullName>Demande formation</fullName>
+                    <default>false</default>
+                    <label>Demande formation</label>
+                </value>
+                <value>
+                    <fullName>Demande d’intervention</fullName>
+                    <default>false</default>
+                    <label>Demande d’intervention</label>
+                </value>
+                <value>
+                    <fullName>Vente Kit Alibi</fullName>
+                    <default>false</default>
+                    <label>Vente Kit Alibi</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RDLink__c</fullName>
+        <description>CT Mobile RD Link</description>
+        <externalId>false</externalId>
+        <label>RD Link</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Resultat__c</fullName>
+        <externalId>false</externalId>
+        <label>Résultat</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commande</fullName>
+                    <default>false</default>
+                    <label>Commande</label>
+                </value>
+                <value>
+                    <fullName>Encaissement</fullName>
+                    <default>false</default>
+                    <label>Encaissement</label>
+                </value>
+                <value>
+                    <fullName>Relationnel</fullName>
+                    <default>false</default>
+                    <label>Relationnel</label>
+                </value>
+                <value>
+                    <fullName>Dépannage</fullName>
+                    <default>false</default>
+                    <label>Dépannage</label>
+                </value>
+                <value>
+                    <fullName>Prestations associées</fullName>
+                    <default>false</default>
+                    <label>Prestations associées</label>
+                </value>
+                <value>
+                    <fullName>Mutation</fullName>
+                    <default>false</default>
+                    <label>Mutation</label>
+                </value>
+                <value>
+                    <fullName>Développement Gamme</fullName>
+                    <default>false</default>
+                    <label>Développement Gamme</label>
+                </value>
+                <value>
+                    <fullName>Opérations Commerciales</fullName>
+                    <default>false</default>
+                    <label>Opérations Commerciales</label>
+                </value>
+                <value>
+                    <fullName>Point chiffre</fullName>
+                    <default>false</default>
+                    <label>Point chiffre</label>
+                </value>
+                <value>
+                    <fullName>Réclamations</fullName>
+                    <default>false</default>
+                    <label>Réclamations</label>
+                </value>
+                <value>
+                    <fullName>Déstockage</fullName>
+                    <default>false</default>
+                    <label>Déstockage</label>
+                </value>
+                <value>
+                    <fullName>Découverte Prospect</fullName>
+                    <default>false</default>
+                    <label>Découverte Prospect</label>
+                </value>
+                <value>
+                    <fullName>Contrat Partenaire</fullName>
+                    <default>false</default>
+                    <label>Contrat Partenaire</label>
+                </value>
+                <value>
+                    <fullName>Nouveau Mode de Paiement - Oui</fullName>
+                    <default>false</default>
+                    <label>Nouveau Mode de Paiement - Oui</label>
+                </value>
+                <value>
+                    <fullName>Nouveau Mode de Paiement - Non</fullName>
+                    <default>false</default>
+                    <label>Nouveau Mode de Paiement - Non</label>
+                </value>
+                <value>
+                    <fullName>Bio</fullName>
+                    <default>false</default>
+                    <label>Bio</label>
+                </value>
+                <value>
+                    <fullName>BFR</fullName>
+                    <default>false</default>
+                    <label>BFR</label>
+                </value>
+                <value>
+                    <fullName>FDNR</fullName>
+                    <default>false</default>
+                    <label>FDNR</label>
+                </value>
+                <value>
+                    <fullName>Mixe</fullName>
+                    <default>false</default>
+                    <label>Mixe</label>
+                </value>
+                <value>
+                    <fullName>Collection gourmande</fullName>
+                    <default>false</default>
+                    <label>Collection gourmande</label>
+                </value>
+                <value>
+                    <fullName>maboulangerie.com</fullName>
+                    <default>false</default>
+                    <label>maboulangerie.com</label>
+                </value>
+                <value>
+                    <fullName>Présentation MS-Ait , découverte client</fullName>
+                    <default>false</default>
+                    <label>Présentation MS-Ait , découverte client</label>
+                </value>
+                <value>
+                    <fullName>Partenariat client (stats, contrat, challenge, ….)</fullName>
+                    <default>false</default>
+                    <label>Partenariat client (stats, contrat, challenge, ….)</label>
+                </value>
+                <value>
+                    <fullName>Réunion équipe distributeur</fullName>
+                    <default>false</default>
+                    <label>Réunion équipe distributeur</label>
+                </value>
+                <value>
+                    <fullName>Référencement produit</fullName>
+                    <default>false</default>
+                    <label>Référencement produit</label>
+                </value>
+                <value>
+                    <fullName>Accompagnement / formation équipe distributeur</fullName>
+                    <default>false</default>
+                    <label>Accompagnement / formation équipe distributeur</label>
+                </value>
+                <value>
+                    <fullName>Négociation / offre tarifaire</fullName>
+                    <default>false</default>
+                    <label>Négociation / offre tarifaire</label>
+                </value>
+                <value>
+                    <fullName>Gestion litige (qualité, facturation, livraison, etc….)</fullName>
+                    <default>false</default>
+                    <label>Gestion litige (qualité, facturation, livraison, etc….)</label>
+                </value>
+                <value>
+                    <fullName>Présentation nouveautés et opérations</fullName>
+                    <default>false</default>
+                    <label>Présentation nouveautés et opérations</label>
+                </value>
+                <value>
+                    <fullName>Référencement nouvelle ligne (vente)</fullName>
+                    <default>false</default>
+                    <label>Référencement nouvelle ligne (vente)</label>
+                </value>
+                <value>
+                    <fullName>Op trade (vente)</fullName>
+                    <default>false</default>
+                    <label>Op trade (vente)</label>
+                </value>
+                <value>
+                    <fullName>Aide technique (mise en place nouveauté, op trade, démonstration-formation équipes, animation magasin, ….)</fullName>
+                    <default>false</default>
+                    <label>Aide technique (mise en place nouveauté, op trade, démonstration-formation équipes, animation magasin, ….)</label>
+                </value>
+                <value>
+                    <fullName>Commande de suivi (hors nouveautés)</fullName>
+                    <default>false</default>
+                    <label>Commande de suivi (hors nouveautés)</label>
+                </value>
+                <value>
+                    <fullName>Visite de suivi commercial</fullName>
+                    <default>false</default>
+                    <label>Visite de suivi commercial</label>
+                </value>
+                <value>
+                    <fullName>Autre : à préciser dans le CR</fullName>
+                    <default>false</default>
+                    <label>Autre : à préciser dans le CR</label>
+                </value>
+                <value>
+                    <fullName>Aucun</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Aucun</label>
+                </value>
+                <value>
+                    <fullName>Demande d&apos;intervention</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Demande d&apos;intervention</label>
+                </value>
+                <value>
+                    <fullName>Demande de rappel</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Demande de rappel</label>
+                </value>
+                <value>
+                    <fullName>Développement</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Développement</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Statut__c</fullName>
+        <externalId>false</externalId>
+        <label>Statut</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Planifié</fullName>
+                    <default>true</default>
+                    <label>Planifié</label>
+                </value>
+                <value>
+                    <fullName>Réalisé</fullName>
+                    <default>false</default>
+                    <label>Réalisé</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_d_action__c</fullName>
+        <externalId>false</externalId>
+        <label>Type d&apos;action</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Régler réclamation</fullName>
+                    <default>false</default>
+                    <label>Régler réclamation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_d_appel__c</fullName>
+        <externalId>false</externalId>
+        <label>Type d&apos;appel</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Appel entrant</fullName>
+                    <default>false</default>
+                    <label>Appel entrant</label>
+                </value>
+                <value>
+                    <fullName>Appel sortant</fullName>
+                    <default>false</default>
+                    <label>Appel sortant</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <listViews>
+        <fullName>MyActivities</fullName>
+        <columns>ACTIVITY_SUBTYPE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>EVENT.LOCATION</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyDelegatedActivities</fullName>
+        <filterScope>Delegated</filterScope>
+        <label>My Delegated Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyTeamsActivities</fullName>
+        <filterScope>Team</filterScope>
+        <label>My Team&apos;s Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews>
+    <searchLayouts>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>
